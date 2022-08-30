@@ -1,37 +1,34 @@
 import Link from 'next/link';
-import {Transition} from '@headlessui/react';
+// import {Transition} from '@headlessui/react';
 // import { Link } from 'react-scroll' 
 import { NavLink } from './NavLink';
+import { useRouter } from 'next/router';
 
 export const Pages = () => {
+    const {asPath} = useRouter()
     return (
         <div className="w-1/6 md:w-1/5 h-screen border-r-2">
-            <nav>
-                <ul>
-                    <li>
-                        <Link href="/">
-                            <a>about</a>
-                        </Link>
+            <nav className='m-2 md:m-8 h-1/6'>
+                <ul className='h-full flex flex-col justify-between'>
+                    <li className=''>
+                        <NavLink href='/'>
+                            about
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink href='/works' className='text-blue'>
+                        <NavLink href='/works'>
                             works
                         </NavLink>
                     </li>
                     <li>
-                        <Link href="/works">
-                            <a>works</a>
-                        </Link>
+                        <NavLink href="/resume">
+                            resume
+                        </NavLink>
                     </li>
                     <li>
-                        <Link href="/resume">
-                            <a>resume</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">
-                            <a>contact</a>
-                        </Link>
+                        <NavLink href="/contact">
+                            contact
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

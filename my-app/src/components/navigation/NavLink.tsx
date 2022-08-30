@@ -1,29 +1,21 @@
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-import PropTypes from 'prop-types';
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react'
+import Link, { LinkProps } from 'next/link'
 
-type propTypes = {
-    href: string
-    exact?: boolean
-    children: ReactNode
-    className: string
-};
+import { useRouter } from 'next/router'
 
+interface Props extends LinkProps {
+  children: ReactNode
+}
+const styleLinkActive = 'font-archivo font-bold text-base md:text-lg'
+const styleLinkNotActive = 'text-gray-500 font-archivo font-bold text-sm md:text-base'
 
-export const NavLink = ({ href, exact, children, ...props }: propTypes) => {
-    const { pathname } = useRouter();
-    const isActive = exact ? pathname === href : pathname.startsWith(href);
-
-    if (isActive) {
-        props.className += ' active';
-    }
-
-    return (
-        <Link href={href}>
-            <a {...props}>
-                {children}
-            </a>
-        </Link>
-    );
+export const NavLink = ({ href, children}: Props) => {
+  const { asPath } = useRouter()
+  return (
+    <Link href={href}>
+      <a className={asPath === href? styleLinkActive: styleLinkNotActive}>
+        {children}
+      </a>
+    </Link>
+  )
 }
