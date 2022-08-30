@@ -18,7 +18,9 @@ a {
   box-sizing: border-box;
 } */
 html,
-body,
+body {
+  height: 100%;
+}
 .__next {
   height: 100%;
   background-color: #F8F4F0;
@@ -33,5 +35,6 @@ body,
   body {
     color: white;
     background: black;
+    height: 100%;
   }
 }
