@@ -1,6 +1,6 @@
 import { BsLinkedin, BsGithub, BsMailbox } from 'react-icons/Bs';
 import { IconContext } from 'react-icons';
-import { Icon } from './ui/Icon';
+import { Icon } from '../ui/Icon';
 
 const linkedin: string = 'https://www.linkedin.com/in/juandelossantosdeveloper/';
 const github: string = 'https://github.com/JuanDls01';

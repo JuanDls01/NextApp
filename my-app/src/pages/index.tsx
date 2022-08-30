@@ -2,10 +2,11 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import {Layout} from '../hocs/Layout'
-import { Title } from '../components/navigation/ui/Title'
-import { SubTitle } from '../components/navigation/ui/Subtitle'
-import { Paragragph } from '../components/navigation/ui/Paragraph'
+import { Title } from '../components/ui/Title'
+import { SubTitle } from '../components/ui/Subtitle'
+import { Paragragph } from '../components/ui/Paragraph'
 import FotoPerfil from '../../public/FotoPerfil.png'
+import { Carousel } from '../components/Carousel'
 
 
 const Home: NextPage = () => {
@@ -40,6 +41,7 @@ const Home: NextPage = () => {
               even more <span className='font-semibold'>TypeScript</span>. These are some of
               the technologies I work with:
             </Paragragph>
+            <Carousel />
         </div>
       </Layout>
     </div>
