@@ -6,7 +6,7 @@ type Props = {
 
 export const Title = ({children}: Props) => {
     return (
-        <h1 className="font-archivo font-black text-2xl md:text-3xl ">
+        <h1 className="font-archivo font-black my-4 text-2xl md:text-5xl ">
             {children}
         </h1>
     )

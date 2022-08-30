@@ -2,12 +2,11 @@ import Link from 'next/link';
 // import {Transition} from '@headlessui/react';
 // import { Link } from 'react-scroll' 
 import { NavLink } from './NavLink';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 
 export const Pages = () => {
-    const {asPath} = useRouter()
     return (
-        <div className="w-1/6 md:w-1/5 h-screen border-r-2">
+        <div className="w-1/6 md:w-1/5 h-screen border-r-2 border-black dark:border-white">
             <nav className='m-2 md:m-8 h-1/6'>
                 <ul className='h-full flex flex-col justify-between'>
                     <li className=''>
