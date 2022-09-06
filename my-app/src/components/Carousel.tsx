@@ -12,7 +12,7 @@ import { ImgUrls } from '../utils/ImgUrls';
 
 export const Carousel = () => {
     return(
-        <div className='my-2 h-40'>
+        <div className='bg-transparent'>
             <Swiper
                 spaceBetween={50}
                 slidesPerView={4}
@@ -24,10 +24,11 @@ export const Carousel = () => {
                 className='flex justify-center items-center h-full'
             >
             {
-                ImgUrls.map(img => {
+                ImgUrls?.map(img => {
                     return(
                         <SwiperSlide
-                        className='flex justify-center items-center h-100'>
+                        className='flex justify-center items-center h-5/6'
+                        >
                             <TechLogo src={img} />
                             {/* <Image src={img} objectFit='fill' width={100} height={100}/> */}
                         </SwiperSlide>
