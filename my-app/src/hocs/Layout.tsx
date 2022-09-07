@@ -9,9 +9,9 @@ type Props = {
 
 export const Layout = ({children}: Props) => {
     return (
-        <div>
+        <div className='h-auto'>
             <Navbar />
-            <div className='flex w-full h-screen'>
+            <div className='flex w-full h-auto'>
                 <Pages />
                 {children}
             </div>

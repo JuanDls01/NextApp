@@ -6,7 +6,7 @@ export const Projects = [
     {
         id: 1,
         name: 'Country App',
-        image: 'https://raw.githubusercontent.com/JuanDls01/Portfolio/works/my-app/public/works/ContryApp.png',
+        image: 'https://raw.githubusercontent.com/JuanDls01/Portfolio/works/my-app/public/works/CountryApp.png',
         description: 'Single Page Application la cual permite visualizar banderas de países y actividades turísticas asociadas a la misma. Conectada a la API REST Countries para la solicitud de la información',
         technologies: 'JavaScript, React, Redux, NodeJS, Express y PostgreSQL',
         github: 'https://github.com/JuanDls01/PI-Countries-main',
