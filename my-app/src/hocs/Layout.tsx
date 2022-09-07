@@ -11,7 +11,7 @@ export const Layout = ({children}: Props) => {
     return (
         <div>
             <Navbar />
-            <div className='flex w-full h-5/6'>
+            <div className='flex w-full h-screen'>
                 <Pages />
                 {children}
             </div>
