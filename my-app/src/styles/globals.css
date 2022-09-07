@@ -17,10 +17,16 @@ a {
 * {
   box-sizing: border-box;
 } */
-html,
-body,
+html {
+  height: auto;
+}
+body {
+  height: auto;
+  background-color: #faf0e5d0;
+}
 .__next {
-  height: 100%;
+  height: auto;
+  /* background-color: #F8F4F0; */
 }
 
 
@@ -31,6 +37,10 @@ body,
   }
   body {
     color: white;
-    background: black;
+    background-color: #222118;
+    height: 100%;
+  }
+  .__next {
+    height: 100%;
   }
 }

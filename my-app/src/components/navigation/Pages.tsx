@@ -6,7 +6,7 @@ import { NavLink } from './NavLink';
 
 export const Pages = () => {
     return (
-        <div className="w-1/6 md:w-1/5 h-screen border-r-2 border-black dark:border-white">
+        <div className="w-1/6 md:w-1/5 h-screen lg:h-screen">
             <nav className='m-2 md:m-8 h-1/6'>
                 <ul className='h-full flex flex-col justify-between'>
                     <li className=''>
