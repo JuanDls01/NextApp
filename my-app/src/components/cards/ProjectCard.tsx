@@ -31,7 +31,7 @@ export const ProjectCard = ({project}: props) => {
                 />
             </CardHeader>
             <CardBody className="text-justify">
-                <Typography variant="h5" className="font-archivo font-semibold text-yellow-600 my-1 text-sm md:text-lg">
+                <Typography variant="h5" className="font-archivo font-semibold my-1 text-sm md:text-lg">
                 {project.name}
                 </Typography>
                 <Typography variant='paragraph' className='font-archivo text-black dark:text-white font-medium my-1 text-xs md:text-sm h-12'>
