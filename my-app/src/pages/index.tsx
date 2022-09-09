@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           
       </Head>
       <Layout>
-        <div className='w-5/6 h-screen pt-2 pr-10 pb-10 pl-10 md:pt-8 md:pr-20 md:pb-20 md:pl-20 border-l-2 border-black dark:border-white'>
+        <div className='w-5/6 h-screen py-2 px-5 sm:px-10 md:py-8 md:px-20r border-l-2 border-black dark:border-white'>
             <div className='w-20 h-20 md:w-32 md:h-32 border-2 border-black dark:border-white rounded-full'>
               <Image src={FotoPerfil} className='rounded-full border-2 border-blue-500' objectFit='cover' width={130} height={130}/>
             </div>

@@ -7,7 +7,7 @@ const github: string = 'https://github.com/JuanDls01';
 
 export const Navbar = () => {
   return (
-    <nav className='h-12 border-b-2 border-black dark:border-white flex flex-row place-content-between items-center'>
+    <nav className='h-12 border-b-2 border-black bg-white dark:border-white flex flex-row place-content-between items-center'>
       <a className="font-archivo text-base md:text-2xl font-bold mx-2 md:mx-8">
         ../Portfolio/Juani
       </a>
