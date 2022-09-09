@@ -9,6 +9,7 @@ import NodeJS from '../../public/techlogos/NodeJS.png';
 import PostgreSQL from '../../public/techlogos/PostgreSQL.png';
 import HTML from '../../public/techlogos/HTML.png';
 import CSS from '../../public/techlogos/CSS.png';
+import Git from '../../public/techlogos/Git.png'
 
 export const technologies = [
     {
@@ -65,5 +66,10 @@ export const technologies = [
         id: 11,
         name: 'CSS',
         image: CSS,
+    },
+    {
+        id: 12,
+        name: 'Git',
+        image: Git,
     },
 ]
