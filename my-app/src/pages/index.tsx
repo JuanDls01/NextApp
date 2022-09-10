@@ -16,7 +16,6 @@ const Home: NextPage = () => {
       <Head>
           <title>../Portfolio/Juani</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          
       </Head>
       <Layout>
         <div className='w-5/6 h-auto py-2 px-5 sm:px-10 md:py-8 md:px-20 border-l-2 border-black dark:border-white'>
