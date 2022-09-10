@@ -40,7 +40,7 @@ export const ProjectCard = ({project}: props) => {
                 Technologies: {project.technologies}
                 </Typography>
             </CardBody>
-            <CardFooter divider className="flex items-center justify-between h-1/6">
+            <CardFooter divider className="flex items-end justify-between h-1/6">
                 <ButtonRepo link={project.github}>REPO</ButtonRepo>
                 <ButtonDeploy link={project.deploy}>DEPLOY</ButtonDeploy>
             </CardFooter>

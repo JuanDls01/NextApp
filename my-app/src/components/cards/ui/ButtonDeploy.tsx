@@ -9,7 +9,11 @@ type Props = {
 export const ButtonDeploy = ({children, link}: Props) => {
     return (
         <a href={link} target="_blank" rel="noopener noreferrer">
-            <Button variant="gradient" ripple={true} className="font-archivo text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 py:1 md:py-2 px-2 md:px-4 flex items-center justify-center">
+            <Button 
+                variant="gradient" 
+                ripple={true} 
+                className={`font-archivo text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 py:1 md:py-2 px-2 md:px-4 flex items-center justify-center ${link === 'Not yet'? 'cursor-not-allowed': null}`}
+            >
                 {children}
             </Button>
         </a>

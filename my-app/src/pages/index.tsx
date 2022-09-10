@@ -5,7 +5,9 @@ import {Layout} from '../hocs/Layout'
 import { Title } from '../components/navigation/ui/Title'
 import { SubTitle } from '../components/navigation/ui/Subtitle'
 import { Paragragph } from '../components/navigation/ui/Paragraph'
+import { TechLogos } from '../components/TechLogos'
 import FotoPerfil from '../../public/FotoPerfil.png'
+
 
 
 const Home: NextPage = () => {
@@ -17,7 +19,7 @@ const Home: NextPage = () => {
           
       </Head>
       <Layout>
-        <div className='w-5/6 h-screen py-2 px-5 sm:px-10 md:py-8 md:px-20r border-l-2 border-black dark:border-white'>
+        <div className='w-5/6 h-auto py-2 px-5 sm:px-10 md:py-8 md:px-20 border-l-2 border-black dark:border-white'>
             <div className='w-20 h-20 md:w-32 md:h-32 border-2 border-black dark:border-white rounded-full'>
               <Image src={FotoPerfil} className='rounded-full border-2 border-blue-500' objectFit='cover' width={130} height={130}/>
             </div>
@@ -40,6 +42,7 @@ const Home: NextPage = () => {
               even more <span className='font-semibold'>TypeScript</span>. These are some of
               the technologies I work with:
             </Paragragph>
+            <TechLogos />
         </div>
       </Layout>
     </div>

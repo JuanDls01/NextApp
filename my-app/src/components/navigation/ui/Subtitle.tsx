@@ -6,7 +6,7 @@ type Props = {
 
 export const SubTitle = ({children}: Props) => {
     return (
-        <h3 className="font-archivo font-semibold text-yellow-600 my-4 md:my-6 text-xl md:text-3xl ">
+        <h3 className="font-archivo font-semibold text-yellow-600 my-4 md:my-6 text-xl md:text-3xl xl:text-4xl">
             {children}
         </h3>
     )
