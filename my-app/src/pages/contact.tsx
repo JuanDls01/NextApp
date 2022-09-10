@@ -8,7 +8,7 @@ const Contact: NextPage = () => {
     <Layout>
       <div className='w-5/6 h-auto py-2 px-5 sm:py-4 sm:px-10 md:py-8 md:px-20 border-l-2 border-black dark:border-white'>
         <Title>Contact</Title>
-        <Paragragph>Let's chat</Paragragph>
+        <Paragragph>Let&apos;s chat</Paragragph>
       </div>
     </Layout>
   )
