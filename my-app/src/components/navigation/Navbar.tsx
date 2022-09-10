@@ -1,5 +1,6 @@
-import { BsLinkedin, BsGithub, BsMailbox } from 'react-icons/Bs';
-import { IconContext } from 'react-icons';
+// import { BsLinkedin, BsGithub, BsMailbox } from 'react-icons/Bs';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 import { Icon } from './ui/Icon';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
@@ -17,17 +18,17 @@ export const Navbar = () => {
       <ul className='w-20 h-full mx-2 md:w-32 md:mx-8 flex items-center place-content-around '>
         <li >
           <Icon link={linkedin}>
-            <BsLinkedin />
+            <FaGithub />
           </Icon>
         </li>
         <li>
           <Icon link={github}>
-            <BsGithub />
+            <FaLinkedinIn />
           </Icon>
         </li>
         <li>
           <Icon link={linkedin}>
-            <BsMailbox />
+            <MdEmail />
           </Icon>
         </li>
       </ul>
