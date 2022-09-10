@@ -29,14 +29,14 @@ const Home: NextPage = () => {
               But you can call me Juani
             </SubTitle>
             <Paragragph>
-              I'm a <span className='font-semibold'>FullStack Web Developer</span> and <span className='font-semibold'>Industrial Engineer Student Advance</span>. 
+              I&apos;m a <span className='font-semibold'>FullStack Web Developer</span> and <span className='font-semibold'>Industrial Engineer Student Advance</span>. 
               I really like working on the <span className='font-semibold'>Backend</span>, 
               creating functionalities and Rest APIs, but I can also develop really cool 
               user interface on the <span className='font-semibold'>Frontend</span>.
-              I consider myself a Student of Uncle Bob's "Clean Code Mentoring School"
+              I consider myself a Student of Uncle Bob&apos;s &quot;Clean Code Mentoring School&quot;
             </Paragragph>
             <Paragragph>
-              I really like <span className='font-semibold'>Python</span> because it's my 
+              I really like <span className='font-semibold'>Python</span> because it&apos;s my 
               first programming language, but I also really like <span className='font-semibold'>JavaScript</span> and 
               even more <span className='font-semibold'>TypeScript</span>. These are some of
               the technologies I work with:
