@@ -1,4 +1,7 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document';
+import dotenv from 'dotenv-safe'
+
+dotenv.config()
 
 export default function Document() {
   return (
