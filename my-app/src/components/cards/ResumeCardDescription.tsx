@@ -24,7 +24,7 @@ export const ResumeCardDescription = ({experience}: props) => {
                 <summary className="font-archivo font-semibold text-lg md:text-xl xl:text-2xl">{experience.title}</summary>
                 <h5 className="ml-6 my-1 font-archivo font-semibold text-sm md:text-base xl:text-lg text-gray-600">{experience.institution}</h5>
                 <ul className="ml-12">
-                    {arrExperienceDescription.map(element => <li className="list-disc my-1 text-justify font-archivo text-xs md:text-sm xl:text-base text-gray-600">{element}</li>)}    
+                    {arrExperienceDescription.map(element => <li className="list-disc my-1 text-justify font-archivo text-xs md:text-sm xl:text-base text-gray-600" key={element}>{element}</li>)}    
                 </ul>
             </details>
         </div>
