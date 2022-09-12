@@ -20,11 +20,6 @@ export const Pages = () => {
                             resume
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink href="/contact">
-                            contact
-                        </NavLink>
-                    </li>
                 </ul>
             </nav>
             
