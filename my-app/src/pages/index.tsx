@@ -7,7 +7,7 @@ import { SubTitle } from '../components/navigation/ui/Subtitle'
 import { Paragragph } from '../components/navigation/ui/Paragraph'
 import { TechLogos } from '../components/TechLogos'
 import FotoPerfil from '../../public/FotoPerfil.png'
-
+import Ĺogo from '../../public/Logo.png'
 
 
 
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
           <title>../Portfolio/Juani</title>
-          
+          <link rel='icon' href="https://raw.githubusercontent.com/JuanDls01/Portfolio/main/my-app/public/Logo.png"/>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Layout>

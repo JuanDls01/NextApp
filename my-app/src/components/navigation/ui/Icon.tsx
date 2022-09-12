@@ -8,8 +8,8 @@ type Props = {
 
 export const Icon = ({children, link}: Props) => {
     return (
-        <IconContext.Provider value={{className:'w-4 h-4 md:w-6 md:h-6'}}>
-          <a href={link} target="_blank" rel="noopener noreferrer" className='w-4 h-4 md:w-6 md:h-6'>
+        <IconContext.Provider value={{className:'w-4 h-4 md:w-6 md:h-6 dark:color-black'}}>
+          <a href={link} target="_blank" rel="noopener noreferrer" className='w-4 h-4 md:w-6 md:h-6 color-black dark:color-black'>
             {children}
           </a>
         </IconContext.Provider>
