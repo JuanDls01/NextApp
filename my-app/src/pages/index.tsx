@@ -10,11 +10,13 @@ import FotoPerfil from '../../public/FotoPerfil.png'
 
 
 
+
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
           <title>../Portfolio/Juani</title>
+          
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Layout>
