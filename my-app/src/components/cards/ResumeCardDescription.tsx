@@ -18,7 +18,7 @@ export const ResumeCardDescription = ({experience}: props) => {
     const arrExperienceDescription = experience.description.split(';')
     console.log(experienceTo)
     return (
-        <div className="flex flex-column items-start gap-x-10">
+        <div className="mb-5 flex flex-column items-start gap-x-10">
             <h3 className="w-1/6 font-archivo font-semibold text-lg md:text-xl xl:text-2xl">{experienceSince} - {experienceTo}</h3>
             <details className="w-4/6">
                 <summary className="font-archivo font-semibold text-lg md:text-xl xl:text-2xl">{experience.title}</summary>
