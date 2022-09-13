@@ -39,9 +39,12 @@ const sendEmail: SubmitHandler<ChatFormValues> = (data, e) => {
             text: "I will answer you shortly!",
             icon: "success",
           });
-        console.log(result.text);
     }, (error) => {
-        console.log(error.text);
+        swal({
+            title: "Ups",
+            text: "Something goes wrong, try again",
+            icon: "error",
+          });
     });
 }
 
@@ -50,13 +53,24 @@ export const ChatForm = () => {
     const {
         register,
         handleSubmit,
-        formState:{errors}
+        reset,
+        formState,
+        formState:{errors, isSubmitSuccessful}
     } = useForm<ChatFormValues>({
         mode: 'onBlur',
         resolver: yupResolver(validationSchema)
     })
 
-    console.log(errors)
+    React.useEffect(() => {
+        if (formState.isSubmitSuccessful) {
+          reset({ 
+            name: '',
+            company: '',
+            email: '',
+            message: '',
+        });
+        }
+      }, [formState, reset]);
 
     return (
         <form onSubmit={handleSubmit(sendEmail)}>
