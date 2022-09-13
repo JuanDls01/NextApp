@@ -13,7 +13,7 @@ type Props = {
 export const InputChatForm = ({type, name, label, placeholder,error, register}: Props) => {
     return (
         <div className="flex flex-col my-1.5">
-            <label className="font-archivo font-semibold my-1 md:my-2 text-base md:text-lg">{label}{error && <span className="text-red-500 ml-0.5">*</span>}</label>
+            <label className="font-archivo font-semibold my-1 md:my-2 text-sm sm:text-lg xl:text-xl">{label}{error && <span className="text-red-500 ml-0.5">*</span>}</label>
             <input 
                 type={type}
                 placeholder={placeholder}
