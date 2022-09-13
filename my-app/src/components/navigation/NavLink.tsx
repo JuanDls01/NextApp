@@ -7,7 +7,7 @@ interface Props extends LinkProps {
   children: ReactNode
 }
 const styleLinkActive = 'font-archivo font-bold text-base md:text-lg xl:text-xl'
-const styleLinkNotActive = 'text-gray-500 font-archivo font-bold text-sm md:text-base hover:underline hover:underline-offset-2 xl:text-xl'
+const styleLinkNotActive = 'text-gray-500 font-archivo font-bold text-sm md:text-base xl:text-lg hover:underline hover:underline-offset-2 xl:text-xl'
 
 export const NavLink = ({ href, children}: Props) => {
   const { asPath } = useRouter()
