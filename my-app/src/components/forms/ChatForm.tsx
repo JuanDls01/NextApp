@@ -2,11 +2,12 @@ import React, {useRef} from 'react';
 import emailjs from 'emailjs-com';
 import { InputChatForm } from './ui/InputChatForm';
 import { SubmitButton } from './ui/SubmitButton';
+import { TextAreaForm } from './ui/TextArea';
 
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm, SubmitHandler } from "react-hook-form";
 import * as Yup from "yup";
-import { TextAreaForm } from './ui/TextArea';
+import swal from 'sweetalert';
 
 export interface ChatFormValues {
     name: string;
@@ -26,7 +27,6 @@ const validationSchema = Yup.object().shape({
 })
 
 const sendEmail: SubmitHandler<ChatFormValues> = (data, e) => {
-    console.log(data, e?.target)
     
     const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID || ''
     const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID || ''
@@ -34,6 +34,11 @@ const sendEmail: SubmitHandler<ChatFormValues> = (data, e) => {
     
     emailjs.sendForm(serviceID, templateID, e?.target, publicKey)
     .then((result) => {
+        swal({
+            title: "Your message was sent correctly",
+            text: "I will answer you shortly!",
+            icon: "success",
+          });
         console.log(result.text);
     }, (error) => {
         console.log(error.text);
