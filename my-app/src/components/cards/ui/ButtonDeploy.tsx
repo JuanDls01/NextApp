@@ -8,7 +8,7 @@ type Props = {
 
 export const ButtonDeploy = ({children, link}: Props) => {
     return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a href={link} target="_blank" rel="noopener noreferrer" className={`${link === 'Not yet'? 'hidden': null}`}>
             <Button 
                 variant="gradient" 
                 ripple={true} 
